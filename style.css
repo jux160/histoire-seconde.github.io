@@ -442,8 +442,8 @@ h1 {
 
 .tooltip .tooltiptext {
 visibility: hidden;
-width: 200px;
-background-color: #f0baba;
+width: 300px;
+background-color: #ac5858;
 color: #fff;
 text-align: center;
 padding: 5px 0;
@@ -452,7 +452,7 @@ position: absolute;
 z-index: 1;
 top: 110%;
 left: 50%;
-margin-left: -100px; /* Use half of the width (120/2 = 60), to center the tooltip */
+margin-left: -150px; /* Use half of the width (120/2 = 60), to center the tooltip */
 font-size: 0.9em;
 }
 
