@@ -85,8 +85,8 @@
 #flex-container {
 	display: inline-flex;
 	flex-direction: row;
-	justify-content: center;
-	align-items: center;
+	justify-content: space-around;
+	align-items: space-around;
 	/* gap: 20px; */
 
 	/* display: inline-flex; */
@@ -95,8 +95,8 @@
 #flex-container-2 {
 	display: inline-flex;
 	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+	justify-content: space-around;
+	align-items: space-around;
 	
 	/* display: inline-flex; */
 }
@@ -117,10 +117,10 @@
 	-webkit-flex-direction: row;
 	-ms-flex-direction: row;
 	flex-direction: row;
-	-webkit-box-pack: center;
-	-webkit-justify-content:  center;
-	-ms-flex-pack: center;
-	justify-content: center;
+	-webkit-box-pack: space-around;
+	-webkit-justify-content:  space-around;
+	-ms-flex-pack: space-around;
+	justify-content: space-around;
 	border-radius: 20px;
 	background-color: #fddbdb;
 	mix-blend-mode: normal;
@@ -288,7 +288,7 @@
 	margin-left:228px ;
 	padding-right: 10px;
 	padding-left: 10px;
-	justify-content: center;
+	justify-content: space-around;
 	align-items: stretch;
 	border-radius: 20px;
 	background-color: #f0baba;
@@ -298,7 +298,7 @@
 
 .section-4 {
 	display: block;
-	justify-content: center;
+	justify-content: space-around;
 }
 
 .container-2 {
@@ -375,7 +375,6 @@
 	display: inline-block;
 	margin-top: 450px;
 	margin-left: 500px;
-	overflow: scroll;
 	height: 300px;
 	width: 600px;
 	background-color:  #f0baba;
@@ -385,7 +384,7 @@
 }
 header{
 	display: flex;
-	justify-content: center;
+	justify-content: space-around;
 }
 
 h1 {
@@ -439,7 +438,7 @@ h1 {
 	display: inline-block;
 	font-weight: bold;
   }
-.image-center {
+.image-space-around {
 	display: block;
     margin-left: auto;
     margin-right: auto;
@@ -450,14 +449,14 @@ visibility: hidden;
 width: 300px;
 background-color: #ac5858;
 color: #fff;
-text-align: center;
+text-align: space-around;
 padding: 5px 0;
 border-radius: 6px;
 position: absolute;
 z-index: 1;
 top: 110%;
 left: 50%;
-margin-left: -150px; /* Use half of the width (120/2 = 60), to center the tooltip */
+margin-left: -150px; /* Use half of the width (120/2 = 60), to space-around the tooltip */
 font-size: 0.9em;
 }
 
@@ -476,3 +475,14 @@ border-color: transparent transparent #f0baba transparent;
 visibility: visible;
 }
   
+.a{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 30px;
+	font-size: 22px;	
+}
+
+.a+a{
+	padding: 18px;
+}
